@@ -14,7 +14,7 @@ RUN pip3 install awscli --user &&\
     wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz && \
     tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz && \
     chmod +x hugo && \
+    echo "PATH=$PATH:/home/builder/.local/bin" > /home/builder/.bashrc && \
     mv hugo /usr/local/bin/
 
 
-# echo "PATH=$PATH:/home/builder/.local/bin" > /home/builder/.bashrc
