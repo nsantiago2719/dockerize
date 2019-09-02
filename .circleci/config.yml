@@ -13,9 +13,6 @@ jobs:
               py-pip=9.0.0-r1
             pip install awscli
       - run:
-          name: Docker Login
-          command: |
-      - run:
           name: Build Image
           command: |
             docker build -t $URI hugo
