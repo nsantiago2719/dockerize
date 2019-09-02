@@ -19,5 +19,5 @@ WORKDIR /tmp
 USER builder
 
 # Install build dependencies
-RUN pip3 install awscli --user &&\
+RUN pip3 install awscli --user
 
