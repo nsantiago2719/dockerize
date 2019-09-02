@@ -19,5 +19,5 @@ jobs:
       - run:
           name: Push Image
           command: |
-            $(aws ecr get-login --no-include-email --region us-east-1)
+            $(aws ecr get-login --no-include-email)
             docker push $URI
