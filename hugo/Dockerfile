@@ -7,7 +7,7 @@ RUN apt update &&  \
     wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz && \
     tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz && \
     chmod +x hugo && \
-    mv hugo /usr/local/bin/
+    mv hugo /usr/local/bin/ && \
     pip3 install awscli
 
 # set workdir  to builder home
